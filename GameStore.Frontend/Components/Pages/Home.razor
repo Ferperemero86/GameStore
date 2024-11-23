@@ -1,9 +1,17 @@
 ﻿@page "/"
+
+@using GameStore.Frontend.Clients
 @using Models
 
 <PageTitle>Game Catalog</PageTitle>
 
-<table class="table table-striped table-bordered table-hover mt-5">
+@if (games is null)
+{
+  <p><em>Loading...</em></p>
+}
+else
+{
+  <table class="table table-striped table-bordered table-hover mt-5">
   <thead class="table-dark">
     <th>Id</th>
     <th>Name</th>
@@ -12,7 +20,7 @@
     <th>Release Date</th>
   </thead>
   <tbody>
-    @foreach (var game in games)
+    @foreach (var game in @games)
     {
       <tr>
         <td>@game.Id</td>
@@ -24,30 +32,18 @@
     }
   </tbody>
 </table>
+}
+
 
 @code {
-  private GameSummary[] games = [
-    new() {
-      Id = 1,
-      Name = "Street Fighter II",
-      Genre = "Fighting", 
-      Price = 20.00M,
-      ReleaseDate = new DateOnly(1992, 7, 15)
-    },
-    new() {
-      Id = 1,
-      Name = "Final Fantasy",
-      Genre = "RPG", 
-      Price = 15.00M,
-      ReleaseDate = new DateOnly(2000, 7, 15)
-    }, 
-    new() {
-      Id = 1,
-      Name = "Silent Hill 2",
-      Genre = "Horror", 
-      Price = 30.00M,
-      ReleaseDate = new DateOnly(2024, 7, 15)
-    }
-  ];
+  private GamesClient client = new();
+  private GameSummary[]? games;
+
+  protected override void OnInitialized()
+  {
+    games = client.GetGames();
+  }
+
 }
    
+    
