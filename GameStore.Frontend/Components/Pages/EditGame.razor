@@ -1,5 +1,7 @@
 ﻿@page "/editgame"
 
+@inject NavigationManager NavigationManager
+
 <PageTitle>New Game</PageTitle>
 <h3>New Game</h3>
 
@@ -35,6 +37,7 @@ else
           <InputDate  id="releaseDate" @bind-value="game.ReleaseDate" class="form-control" />
         </div>
         <button class="btn btn-primary">Submit</button>
+        <a role="button" href="/" class="btn btn-secondary">Cancel</a>
       </EditForm>
     </div>
   </div>
@@ -62,6 +65,7 @@ else
   private void HandleSubmit()
   {
     gamesClient.AddGame(game);
+    NavigationManager.NavigateTo("/");
   }
 }
     
