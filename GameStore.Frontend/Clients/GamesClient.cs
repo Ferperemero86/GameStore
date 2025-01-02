@@ -7,21 +7,21 @@ public class GamesClient
 {
   private List<GameSummary> games = [
     new() {
-      Id = 1,
+      Id = 3,
       Name = "Street Fighter II",
       Genre = "Fighting",
       Price = 20.00M,
       ReleaseDate = new DateOnly(1992, 7, 15)
     },
     new() {
-      Id = 2,
+      Id = 1,
       Name = "Final Fantasy",
       Genre = "RPG", 
       Price = 15.00M,
       ReleaseDate = new DateOnly(2000, 7, 15)
     }, 
     new() {
-      Id = 3,
+      Id = 2,
       Name = "Silent Hill 2",
       Genre = "Horror", 
       Price = 30.00M,
@@ -53,13 +53,13 @@ public class GamesClient
   {
     GameSummary game = GetGameSummaryById(id);
 
-    var genre = genres.Single(genre => string.Equals(genre.Name, game.Genre, StringComparison.OrdinalIgnoreCase));
+    var genre = genres.SingleOrDefault(genre => string.Equals(genre.Name, game.Genre, StringComparison.OrdinalIgnoreCase));
 
     return new GameDetails
     {
         Id = game.Id,
         Name = game.Name,
-        GenreId = genre.Id.ToString(),
+        GenreId = genre?.Id.ToString(),
         Price = game.Price,
         ReleaseDate = game.ReleaseDate
     };
