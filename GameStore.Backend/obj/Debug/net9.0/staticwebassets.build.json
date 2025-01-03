@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "H657cNVsKLd/p1iGn3h1mgY76lP1/QeUrAFIfEE899M=",
+  "Source": "GameStore.Backend",
+  "BasePath": "_content/GameStore.Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
