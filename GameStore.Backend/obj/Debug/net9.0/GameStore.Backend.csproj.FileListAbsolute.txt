@@ -27,3 +27,4 @@ C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\ne
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStore.Backend.pdb
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStore.Backend.genruntimeconfig.cache
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\ref\GameStore.Backend.dll
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\bin\Debug\net9.0\web.config
