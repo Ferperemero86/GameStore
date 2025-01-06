@@ -28,3 +28,9 @@ C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\ne
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStore.Backend.genruntimeconfig.cache
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\ref\GameStore.Backend.dll
 C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\bin\Debug\net9.0\web.config
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\bin\Debug\net9.0\MinimalApis.Extensions.dll
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\bin\Debug\net9.0\MiniValidation.dll
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStore.Backend.csproj.AssemblyReference.cache
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStore.Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Fernando\Desktop\net-portfolio\GameStore\GameStore.Backend\obj\Debug\net9.0\GameStor.D4178251.Up2Date

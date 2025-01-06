@@ -8,8 +8,8 @@ POST http://localhost:5054/games
 Content-Type: application/json
 
 {
-  "name": "POE 2",
-  "grenre": "ARPG",
+  "name": "Poe 2",
+  "genre": "ARPG",
   "price": 20.00,
   "releaseDate": "2011-11-18"
 }
@@ -20,8 +20,8 @@ Content-Type: application/json
 
 {
   "name": "Diablo 4",
-  "grenre": "ARPG",
-  "price": 80.00,
+  "genre": "ARPG",
+  "price": 90.00,
   "releaseDate": "2011-11-24"
 }
 

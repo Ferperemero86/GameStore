@@ -30,13 +30,16 @@ public static class GamesEndPoints
     )
   ];
 
-  public static WebApplication MapGamesEndpoints(this WebApplication app)
+  public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
   {
+
+    var group = app.MapGroup("games").WithParameterValidation();
+
     // GET /games
-    app.MapGet("/games", () => games);
+    group.MapGet("/", () => games);
 
     // GET /games/id
-    app.MapGet("/games/{id}", (int id) => 
+    group.MapGet("/{id}", (int id) => 
     {
       GameDto? game = games.Find(game => game.Id == id);
     
@@ -45,7 +48,7 @@ public static class GamesEndPoints
     .WithName(GetGameEndpointName);
 
     //POST /games
-    app.MapPost("/games", (CreateGameDto newGame) => 
+    group.MapPost("/", (CreateGameDto newGame) => 
     {
       GameDto game = new (
         games.Count + 1,
@@ -59,9 +62,10 @@ public static class GamesEndPoints
 
       return Results.CreatedAtRoute(GetGameEndpointName, new {id = game.Id}, game);
     });
+    
 
     // PUT /games
-    app.MapPut("/games/{id}", (int id, UpdatedGameDto updatedGame) => {
+    group.MapPut("/{id}", (int id, UpdatedGameDto updatedGame) => {
        var index = games.FindIndex(game => game.Id == id);
 
        if (index == -1)
@@ -81,12 +85,12 @@ public static class GamesEndPoints
     });
 
     // DELETE /games/1
-    app.MapDelete("games/{id}", (int id) => {
+    group.MapDelete("/{id}", (int id) => {
       games.RemoveAll(game => game.Id == id);
 
       Results.NoContent();
     });
 
-    return app;
+    return group;
   }
 }
