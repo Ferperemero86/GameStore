@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Fernando\\Desktop\\net-portfolio\\GameStore\\GameStore.Frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
+      "Id": "c:\\Users\\Fernando\\Desktop\\net-portfolio\\GameStore\\GameStore.Frontend\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\GameStore.Frontend.bundle.scp.css",
       "PackagePath": "staticwebassets\\GameStore.Frontend.2t0phemdep.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Fernando\\Desktop\\net-portfolio\\GameStore\\GameStore.Frontend\\wwwroot\\app.css",
+      "Id": "c:\\Users\\Fernando\\Desktop\\net-portfolio\\GameStore\\GameStore.Frontend\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {

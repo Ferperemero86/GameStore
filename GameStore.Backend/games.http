@@ -8,10 +8,10 @@ POST http://localhost:5054/games
 Content-Type: application/json
 
 {
-  "name": "Poe 2",
-  "genre": "ARPG",
-  "price": 20.00,
-  "releaseDate": "2011-11-18"
+  "name": "Alan Wake 2",
+  "genreId": 3,
+  "price": 60.00,
+  "releaseDate": "2014-11-20"
 }
 
 ###
